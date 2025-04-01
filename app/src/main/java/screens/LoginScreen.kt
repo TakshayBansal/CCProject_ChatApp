@@ -28,11 +28,11 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.chatapp.CheckSignedIn
-import com.example.chatapp.DestinationScreen
-import com.example.chatapp.R
-import com.example.chatapp.navigateTo
-import com.example.chatapp.ui.theme.LCViewModel
+import com.example.afinal.CheckSignedIn
+import com.example.afinal.DestinationScreen
+import com.example.afinal.R
+import com.example.afinal.navigateTo
+import com.example.afinal.ui.theme.LCViewModel
 
 @Composable
 fun LoginScreen(navController: NavController,vm: LCViewModel) {

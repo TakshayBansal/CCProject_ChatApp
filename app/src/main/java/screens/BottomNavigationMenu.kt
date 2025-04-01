@@ -1,7 +1,6 @@
 package screens
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 
 import androidx.compose.foundation.layout.Row
@@ -16,22 +15,22 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.chatapp.DestinationScreen
-import com.example.chatapp.R
-import com.example.chatapp.navigateTo
-import kotlinx.coroutines.selects.select
+import com.example.afinal.R
+import com.example.afinal.DestinationScreen
+import com.example.afinal.navigateTo
 
 
 enum class BottomNavigationItem(val icon: Int, val navDestination: DestinationScreen) {
     CHATLIST(R.drawable.chat, DestinationScreen.ChatList),
-    STATUSLIST(R.drawable.status, DestinationScreen.StatusList),
+    //STATUSLIST(R.drawable.status, DestinationScreen.StatusList),
     PROFILE(R.drawable.profile, DestinationScreen.Profile)
 }
 
 @Composable
 fun BottomNavigationMenu(
     selectedItem: BottomNavigationItem,
-    navController: NavController
+    navController: NavController,
+    modifier: Modifier
 ) {
     Row(
         modifier = Modifier
